@@ -1,0 +1,26 @@
+type Query{
+    comptes:[Compte]
+    compte(id:Float):Compte
+}
+
+type Mutation{
+    saveCompte(compteDTO:CompteDTO):Compte
+}
+
+
+type Compte{
+    id:Float,
+    solde:Float,
+    dateCreation:String
+    type:String
+}
+input CompteDTO{
+    solde:Float,
+    type:String
+}
+
+
+
+
+
+
